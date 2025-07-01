@@ -34,7 +34,7 @@ __Objective__: Practice tructuring a simple HTML document using semantic element
 __Objective__: To enhance the structure of the HTML docuent by adding meta tags for improved SEO, accessibility, and responsiveness, while properly defining the document's character set and title.
 
 **NB**: Copy the contett f 0-index.html into 1-index.html. Inside the '''html <head>''' tag:
-* Add a meta tag inside the head
+* Add a meta tag inside the head*
 * Add th charset attribute with the value utf-8
 * Add 4 more meta tags with the following
 	* Tag 1: name=description content=A blig pist about semantic HTML and accessibility practises
@@ -43,3 +43,39 @@ __Objective__: To enhance the structure of the HTML docuent by adding meta tags 
 	* Tag 4: name = viewport content=width: device-width, initial-scale=1.0
 
 *Add a title with the message: "Semantic HTML Blog Post"
+
+### Task 3:
+__Objective__: Apply Semantic elements to create a blog post layout.
+
+**NB**: Copy the content file 1-index.html into 2-index.html
+* Inside the header tag
+	* Add an h1 tag with the content "My Blog"
+	* Add a nav tag
+* Inside the nav tag, create a "ul" tag with 3 "li" tags referencing the following respectively
+	* Home
+	* About 
+	* Contact
+* Inside the article tag in the main tag:
+	* Add a header tag with the "h2" tag text, "Understanding Semantic HTML"
+	* Add a "p" tag with the text: Published on '''html <time datetime="2024-09-10"> September 10.
+* Inside the section tag, add a:
+	* "H3" tag with the text, "Introduction"
+	* "p" tag with the text, "Semantic HTML helps improve the accessibility of and SEO of your website. In this post, we'll explore its benefits and how to implement it." Ensure You close the tags.
+* Below the previous section tag, add another section tag
+* In the newly created section tag, add:
+	* "h3" tag with the text, "Main Content"
+	* A "p" tag with the text
+		'''html
+			### Using elements like
+			<code>&lt;article&gt;<code>
+			<code>&lt;section&gt;<code>
+			<code>&lt;header&gt;<code>
+		'''
+		* ensures that both users and search engines can better understand the structure and content of a webpage.`
+	* A "figure" tag with:
+		* an "img" tag with a src="", and an "alt" attribute with the text, "example"
+	* A figcaption with the txt, "By adopting semantic HTML, you enhance your site's accessibility, improve SEO, and make the content easier to navigate."
+	* Add a "footer" tag, and inside the footer tag, add:
+		* A "p" tag with the text, "written by <name>"
+		* Another "p" tag with the text, "Published on 2024-09-11"
+**NB** Remember to close each tag created and note that all the changes have been made in the article tag insde the main tag.
