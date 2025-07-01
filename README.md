@@ -28,3 +28,18 @@ __Objective__: Practice tructuring a simple HTML document using semantic element
 	* Create a main section that the contains the an article, and inside the article, add an h1 tag for the title and a section for the content.
 	* Add a footer with some copyright information
 **NB**: Remember to structure the HTML file in a doctype.
+
+
+#### Task 2:
+__Objective__: To enhance the structure of the HTML docuent by adding meta tags for improved SEO, accessibility, and responsiveness, while properly defining the document's character set and title.
+
+**NB**: Copy the contett f 0-index.html into 1-index.html. Inside the '''html <head>''' tag:
+* Add a meta tag inside the head
+* Add th charset attribute with the value utf-8
+* Add 4 more meta tags with the following
+	* Tag 1: name=description content=A blig pist about semantic HTML and accessibility practises
+	* Tag 2: name=keywords content=HTML, Semantic, Accessibility, Blog, SEO
+	* Tag 3: name=author content=
+	* Tag 4: name = viewport content=width: device-width, initial-scale=1.0
+
+*Add a title with the message: "Semantic HTML Blog Post"
