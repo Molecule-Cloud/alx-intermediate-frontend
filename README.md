@@ -30,7 +30,7 @@ __Objective__: Practice tructuring a simple HTML document using semantic element
 **NB**: Remember to structure the HTML file in a doctype.
 
 
-#### Task 2:
+#### Task 1:
 __Objective__: To enhance the structure of the HTML docuent by adding meta tags for improved SEO, accessibility, and responsiveness, while properly defining the document's character set and title.
 
 **NB**: Copy the contett f 0-index.html into 1-index.html. Inside the '''html <head>''' tag:
@@ -44,7 +44,7 @@ __Objective__: To enhance the structure of the HTML docuent by adding meta tags 
 
 *Add a title with the message: "Semantic HTML Blog Post"
 
-### Task 3:
+### Task 2:
 __Objective__: Apply Semantic elements to create a blog post layout.
 
 **NB**: Copy the content file 1-index.html into 2-index.html
@@ -79,3 +79,33 @@ __Objective__: Apply Semantic elements to create a blog post layout.
 		* A "p" tag with the text, "written by <name>"
 		* Another "p" tag with the text, "Published on 2024-09-11"
 **NB** Remember to close each tag created and note that all the changes have been made in the article tag insde the main tag.
+
+### Task 3:
+__Objective__: Implement ARIA roles to improve accessibility in a form
+
+* Copy the content of 2-index.html into 3-index.html
+* Inside the main element, add a new section tag
+* In the section tag add:
+	* A "form" tag with the following attributes:
+		* action=”#”
+		* method=”POST”
+		* aria-labelledby=”form-title”
+		* role=”form”
+	* Add a div tag. Inside the div tag, add a/an:
+		* label tag with a for attribute:name
+		* input tag with the following attributes:
+			* type:- “text”
+			* id : “name”
+			* name: “name”
+			* aria-required: “true”
+	* Add another div tag inside the form tag, inside it, add a/an:
+		* label tag with a "or" attribute:name
+		* input tag with the same attributes as the previous. Just replace “name” text with “email”
+	* Add another div, and insde it, add a/an:
+		* "button" tag with the following attributes:
+			* type = submit
+			* aria-label: Submit the Form
+	* Add another div tag with the following attributes:
+		* aria-live: polite
+		* role: alert
+**NB**: Remember to close tags.
