@@ -1,111 +1,138 @@
 # ALX Intermediate Frontend
 
-* This project focuses on building a solid foundation in semantic HTML while emphasiszing accessibility, SEO optimization, and the implmentation of ARIA roles for enhanced usability trough incremental tasks.
+## 0x00-semantic_html
 
-## Learning Objectives
-- Master Sematic HTML:
-Learn to structure web pages using semantic elements such as header, main, article, section, and footer for better content organization and accessibility.
+This project focuses on building a solid foundation in semantic HTML, emphasizing accessibility, SEO optimization, and the implementation of ARIA roles for enhanced usability through incremental tasks.
 
-- Optimize for SEO:
-Understand how to improve the visibility of your webpage through appropriate usage of meta tags and proper document structure.
+---
 
-- Enhanced Accessibility: 
-Implement ARIA roles and attributes to make web forms and content more accessible to users with disabilities.
+### Learning Objectives
 
-- Understand Form Design Best Practices:
-Learn to create accessible and user-friendly forms using modern HTML techniques.
+- **Master Semantic HTML:**  
+  Structure web pages using semantic elements such as `<header>`, `<main>`, `<article>`, `<section>`, and `<footer>` for better content organization and accessibility.
 
-- Adopt Incremental Development:
-Practice progressive enhancement by building upon the foundation of each previous task.
+- **Optimize for SEO:**  
+  Improve the visibility of your webpage through appropriate usage of meta tags and proper document structure.
 
-### Task 0:
-__Objective__: Practice tructuring a simple HTML document using semantic elements.
+- **Enhance Accessibility:**  
+  Implement ARIA roles and attributes to make web forms and content more accessible to users with disabilities.
 
-* Create your first file 0-index.html with:
-	* inside the html tag, create the head and body tags(empty in this order):
-	* Inside the body tag:
-	* Add a header that contains a nav with at least three links.
-	* Create a main section that the contains the an article, and inside the article, add an h1 tag for the title and a section for the content.
-	* Add a footer with some copyright information
-**NB**: Remember to structure the HTML file in a doctype.
+- **Understand Form Design Best Practices:**  
+  Create accessible and user-friendly forms using modern HTML techniques.
 
+- **Adopt Incremental Development:**  
+  Practice progressive enhancement by building upon the foundation of each previous task.
 
-#### Task 1:
-__Objective__: To enhance the structure of the HTML docuent by adding meta tags for improved SEO, accessibility, and responsiveness, while properly defining the document's character set and title.
+---
 
-**NB**: Copy the contett f 0-index.html into 1-index.html. Inside the '''html <head>''' tag:
-* Add a meta tag inside the head*
-* Add th charset attribute with the value utf-8
-* Add 4 more meta tags with the following
-	* Tag 1: name=description content=A blig pist about semantic HTML and accessibility practises
-	* Tag 2: name=keywords content=HTML, Semantic, Accessibility, Blog, SEO
-	* Tag 3: name=author content=
-	* Tag 4: name = viewport content=width: device-width, initial-scale=1.0
+## Tasks
 
-*Add a title with the message: "Semantic HTML Blog Post"
+### Task 0: Basic Semantic Structure
 
-### Task 2:
-__Objective__: Apply Semantic elements to create a blog post layout.
+**Objective:**  
+Practice structuring a simple HTML document using semantic elements.
 
-**NB**: Copy the content file 1-index.html into 2-index.html
-* Inside the header tag
-	* Add an h1 tag with the content "My Blog"
-	* Add a nav tag
-* Inside the nav tag, create a "ul" tag with 3 "li" tags referencing the following respectively
-	* Home
-	* About 
-	* Contact
-* Inside the article tag in the main tag:
-	* Add a header tag with the "h2" tag text, "Understanding Semantic HTML"
-	* Add a "p" tag with the text: Published on '''html <time datetime="2024-09-10"> September 10.
-* Inside the section tag, add a:
-	* "H3" tag with the text, "Introduction"
-	* "p" tag with the text, "Semantic HTML helps improve the accessibility of and SEO of your website. In this post, we'll explore its benefits and how to implement it." Ensure You close the tags.
-* Below the previous section tag, add another section tag
-* In the newly created section tag, add:
-	* "h3" tag with the text, "Main Content"
-	* A "p" tag with the text
-		'''html
-			### Using elements like
-			<code>&lt;article&gt;<code>
-			<code>&lt;section&gt;<code>
-			<code>&lt;header&gt;<code>
-		'''
-		* ensures that both users and search engines can better understand the structure and content of a webpage.`
-	* A "figure" tag with:
-		* an "img" tag with a src="", and an "alt" attribute with the text, "example"
-	* A figcaption with the txt, "By adopting semantic HTML, you enhance your site's accessibility, improve SEO, and make the content easier to navigate."
-	* Add a "footer" tag, and inside the footer tag, add:
-		* A "p" tag with the text, "written by <name>"
-		* Another "p" tag with the text, "Published on 2024-09-11"
-**NB** Remember to close each tag created and note that all the changes have been made in the article tag insde the main tag.
+**Instructions:**
 
-### Task 3:
-__Objective__: Implement ARIA roles to improve accessibility in a form
+1. Create `0-index.html`.
+2. Inside the `<html>` tag, create empty `<head>` and `<body>` tags (in that order).
+3. In the `<body>` tag:
+   - Add a `<header>` containing a `<nav>` with at least three links.
+   - Create a `<main>` section containing an `<article>`. Inside the `<article>`, add:
+     - An `<h1>` tag for the title.
+     - A `<section>` for the content.
+   - Add a `<footer>` with copyright information.
 
-* Copy the content of 2-index.html into 3-index.html
-* Inside the main element, add a new section tag
-* In the section tag add:
-	* A "form" tag with the following attributes:
-		* action=”#”
-		* method=”POST”
-		* aria-labelledby=”form-title”
-		* role=”form”
-	* Add a div tag. Inside the div tag, add a/an:
-		* label tag with a for attribute:name
-		* input tag with the following attributes:
-			* type:- “text”
-			* id : “name”
-			* name: “name”
-			* aria-required: “true”
-	* Add another div tag inside the form tag, inside it, add a/an:
-		* label tag with a "or" attribute:name
-		* input tag with the same attributes as the previous. Just replace “name” text with “email”
-	* Add another div, and insde it, add a/an:
-		* "button" tag with the following attributes:
-			* type = submit
-			* aria-label: Submit the Form
-	* Add another div tag with the following attributes:
-		* aria-live: polite
-		* role: alert
-**NB**: Remember to close tags.
+> **Note:** Remember to include the `<!DOCTYPE html>` declaration.
+
+---
+
+### Task 1: SEO & Accessibility Meta Tags
+
+**Objective:**  
+Enhance the structure of the HTML document by adding meta tags for improved SEO, accessibility, and responsiveness.
+
+**Instructions:**
+
+1. Copy the content of `0-index.html` into `1-index.html`.
+2. Inside the `<head>` tag, add:
+   - `<meta charset="utf-8">`
+   - `<meta name="description" content="A blog post about semantic HTML and accessibility practices">`
+   - `<meta name="keywords" content="HTML, Semantic, Accessibility, Blog, SEO">`
+   - `<meta name="author" content="[Your Name]">`
+   - `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+   - `<title>Semantic HTML Blog Post</title>`
+
+---
+
+### Task 2: Blog Post Layout with Semantic Elements
+
+**Objective:**  
+Apply semantic elements to create a blog post layout.
+
+**Instructions:**
+
+1. Copy the content of `1-index.html` into `2-index.html`.
+2. Inside the `<header>` tag:
+   - Add an `<h1>` with the content "My Blog".
+   - Add a `<nav>` containing a `<ul>` with three `<li>` items: Home, About, Contact.
+3. Inside the `<article>` tag (within `<main>`):
+   - Add a `<header>` with an `<h2>`: "Understanding Semantic HTML".
+   - Add a `<p>`:  
+     `Published on <time datetime="2024-09-10">September 10</time>.`
+   - Inside the `<section>`:
+     - Add an `<h3>`: "Introduction".
+     - Add a `<p>`:  
+       "Semantic HTML helps improve the accessibility and SEO of your website. In this post, we'll explore its benefits and how to implement it."
+   - Below the previous section, add another `<section>`:
+     - Add an `<h3>`: "Main Content".
+     - Add a `<p>`:  
+       "Using elements like `<article>`, `<section>`, and `<header>` ensures that both users and search engines can better understand the structure and content of a webpage."
+     - Add a `<figure>` containing:
+       - An `<img src="" alt="example">`
+       - A `<figcaption>`:  
+         "By adopting semantic HTML, you enhance your site's accessibility, improve SEO, and make the content easier to navigate."
+   - Add a `<footer>` inside the `<article>`:
+     - `<p>`: "Written by [Your Name]"
+     - `<p>`: "Published on 2024-09-11"
+
+> **Note:** All changes are within the `<article>` tag inside `<main>`. Remember to close all tags.
+
+---
+
+### Task 3: Accessible Form with ARIA Roles
+
+**Objective:**  
+Implement ARIA roles to improve accessibility in a form.
+
+**Instructions:**
+
+1. Copy the content of `2-index.html` into `3-index.html`.
+2. Inside the `<main>` element, add a new `<section>`.
+3. In the new section, add a `<form>` with the following attributes:
+   - `action="#"`, `method="POST"`, `aria-labelledby="form-title"`, `role="form"`
+4. Inside the form:
+   - Add a `<div>` containing:
+     - `<label for="name">Name</label>`
+     - `<input type="text" id="name" name="name" aria-required="true">`
+   - Add another `<div>` containing:
+     - `<label for="email">Email</label>`
+     - `<input type="text" id="email" name="email" aria-required="true">`
+   - Add another `<div>` containing:
+     - `<button type="submit" aria-label="Submit the Form">Submit</button>`
+   - Add another `<div aria-live="polite" role="alert"></div>`
+
+> **Note:** Remember to close all tags.
+
+---
+
+## 0x02-tailwind-css
+
+### Project Description
+
+This project is a hands-on exploration of Tailwind CSS, focusing on building responsive and aesthetically pleasing web layouts. Each task introduces advanced Tailwind concepts, enabling learners to effectively utilize utility-first CSS for modern web development.
+
+You will create layouts ranging from basic CSS grids and flexbox navigation bars to complex multi-section layouts that combine both CSS Grid and Flexbox. This progressive approach ensures a deep understanding of responsive design principles while mastering Tailwind CSS.
+
+---
+
