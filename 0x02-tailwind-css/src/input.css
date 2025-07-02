@@ -1,11 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@media (max-width: 768px) 
-{
-    main 
-    {
-        grid-template-columns: 1fr;
+/* New v4 way to specify content */
+@source "./*.html";
+@source "./src/**/*.{html,js}";
+
+@layer components {
+    @media (max-width: 768px) {
+        main {
+            grid-template-columns: 1fr;
+        }
     }
 }

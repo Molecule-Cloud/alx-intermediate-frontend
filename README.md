@@ -221,3 +221,52 @@ main { grid-template-columns: 1fr; }
 - Your output should be as follows:
 ![Screenshot](./images/Screenshot from 2025-07-02 14-19-27.png "Screenshot 1")
 
+
+### Task 3:
+__Objective__: implement a more complex layout using nested grids for multiple sections of a page of the page
+
+- Create a new file 2-index.Html and add the following content to it:
+ - <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Grid Layout</title>
+<link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Complex Grid Layout with Nested Grids</h1>
+    </header>
+
+    <main>
+        <div>
+            <div>Nested 1</div>
+            <div>Nested 2</div>
+        </div>
+        <div>
+            <div>Nested 3</div>
+            <div>Nested 4</div>
+        </div>
+        <div class="bg-green-200 p-4">Content 3</div>
+        <div class="bg-yellow-200 p-4">Content 4</div>
+    </main>
+    </body>
+</html>
+
+- Let’s start by adding basic styling to the page: give the body a padding of 4.
+- Using tailwind’s grid utilities create a 2 x 2 grid layout with nested grids inside each grid cell. You can achieve this by:
+	- inside the main tag, create 2 grid columns each with a gap of 4. i.e
+		- `class="grid grid-cols-2 gap-4"`
+- in the first div, create another grid with 2 cols, background color of blue, paddinng 4 and a gap of 2
+	- `class="grid grid-cols-2 p-4 gap-2 bg-blue-200"`
+- in the Nested 1 and Nested 2 divs, add a blue background color with a gradient of 400 and 500 respectively and a padding of 2:
+	- `class="bg-blue-400 p-2"`
+	`class="bg-blue-500 p-2"`
+- Do the same to the second div only this time change background colour to red
+	- `class="grid grid-cols-2 p-4 gap-2 bg-red-200"`
+- Open your 2-index.html in the browser. Your output should be as follows:
+![Screenshot](./0x02-tailwind-css/images/Screenshot from 2025-07-02 14-19-40.png "Screenshot 2")
+
+
+### Task 3: 
