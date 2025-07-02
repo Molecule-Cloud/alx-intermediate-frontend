@@ -136,3 +136,42 @@ You will create layouts ranging from basic CSS grids and flexbox navigation bars
 
 ---
 
+### Learning OBjectives
+- Master Tailwind CSS Configuration: Learn how to install and configure Tailwind CSS, enabling seamless integration into projects.
+- Build Responsive Layouts: Implement complex, responsive layouts using Tailwind’s utility classes and responsive modifiers.
+- Combine CSS Grid and Flexbox: Develop advanced page structures by leveraging both grid and flexbox techniques.
+- Design Aesthetically Pleasing Components: Use Tailwind’s extensive styling utilities to create visually appealing designs with gradients, spacing, and colors.
+- Optimize for Professional Development: Enhance professional web development skills by adhering to best practices in structuring, coding, and managing CSS frameworks.
+
+### Requirements
+- Node.js installed on the local machine. Click here
+- Basic knowledge of HTML, CSS, and JavaScript.
+- Familiarity with a code editor (VSCode) and browser developer tools.
+- GitHub account for repository management.
+- Tailwind CSS installed via npm or CDN.
+- Modern browser to render and test the designs.
+- Internet connection for accessing Tailwind’s documentation and CDN links.
+
+### Task 0: Setting Up and Installing Tailwind cSS with configuration
+__Objective__: Set up and install tailwind
+
+- Install tailwind css
+- in your current qworking directory, create  file named tailwind.config.js
+- Add the following conde into it:
+	- /** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+- Create a directory "src" inside of your current working directory
+- Create a file named input.css inside the src directory. Inside the file, add the following code:
+	- tailwind base;
+	- tailwind components;
+	- tailwind utilities;
+- Run the tailwind CLI tool to scan your template files for classes and build your CSS output.css with:
+	- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+	
+__NB__: To see Tailwind CSS take effect you need to leave this CLI open and running all through out your testing of the project.
