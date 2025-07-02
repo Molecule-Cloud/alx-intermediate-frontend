@@ -173,5 +173,51 @@ module.exports = {
 	- tailwind utilities;
 - Run the tailwind CLI tool to scan your template files for classes and build your CSS output.css with:
 	- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
-	
+
 __NB__: To see Tailwind CSS take effect you need to leave this CLI open and running all through out your testing of the project.
+
+### Task 1: Createing a Responsove CSS Grid Layout with Tailwind CSS
+__Objective__: Leverage on  tailwind to create a CSS grid layout
+
+- Create a file named 1-index.html in the 0x02-tailwindcss folder
+- copy the following code into it:
+	- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS Grid Layout</title>
+</head>
+<body >
+    <header>
+        <h1>Basic CSS Grid Layout</h1>
+    </header>
+
+    <main>
+        <div>Column 1</div>
+        <div>Column 2</div>
+        <div>Column 3</div>
+    </main>
+   </body>
+</html>
+
+- Let's link our tailwind: Add the following code to the "head" tag in your 1-index.html file.
+	- <link href="./output.css" rel="stylesheet
+- Modify the "main" tag by creating a 3-column layout using css grid with a gap of 4. You can achieve this as follows:
+	- class = "grid grid-cols-3 gap-4"
+- Inside the main file, modify each div to have a background color of blue, with a shade level of 200 incremented by 100 across each div. Each should have a padding of 4 You can achieve this as follows:
+	- class = "bg-blue-200 p-4"
+	- class = "bg-blue-300 p-4"
+	- class - "bg-blue-300 p-4"
+- In the input.css file in your current directory, ensure the layout is responsive by adjusting the grid on smaller screens. You can achieve this by adding this code to it:
+	-  @media (max-width: 768px) 
+{ 
+main { grid-template-columns: 1fr; } 
+}
+
+- Run your 1-index,html using the command
+	- On Mac: open 1-index.html on your terminal
+	- On Windows: start 1-index.html on your terminal
+- Your output should be as follows:
+![Screenshot](./images/Screenshot from 2025-07-02 14-19-27.png "Screenshot 1")
+
