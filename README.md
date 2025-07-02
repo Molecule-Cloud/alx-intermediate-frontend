@@ -269,4 +269,43 @@ __Objective__: implement a more complex layout using nested grids for multiple s
 ![Screenshot](./0x02-tailwind-css/images/Screenshot from 2025-07-02 14-19-40.png "Screenshot 2")
 
 
-### Task 3: 
+### Task 3: Flexbox Basics - Build a Simple Navigation Bar
+__Objective__: Use Tailwind and Flexbox to create a horizontal navigation bar that adjusts to different screen sizes.
+
+- Create a file named 3-nav_index.html and inside it, add the following code:
+	- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navigation Bar</title>
+<link href="./output.css" rel="stylesheet">
+<style>
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="mb-4">
+        <h1 class="text-3xl font-bold">Flexbox Navigation Bar</h1>
+    </header>
+
+</body>
+</html>
+- Inside the body tag, after the header create a nav tag, with 4 a tags referring to Home, About, Services and contacts . This should be as follows:
+	- <nav> 
+<a href="#">Home</a> 
+<a href="#">About</a> 
+<a href="#">Services</a> 
+<a href="#">Contact</a> 
+</nav>
+- Inside the nav add the following:
+	- class="flex space-x-5 justify-center bg-gray-300 text-white p-4"
+- In each a apply the following inline utility classes
+	- class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg"
+- Open your 3-nav_index.html in the browser. It should look like this:
+	- ![Screenshot](./0x02-tailwind-css/images/Screenshot%20from%202025-07-02%2014-19-52.png)
