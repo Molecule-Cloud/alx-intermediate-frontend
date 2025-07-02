@@ -309,3 +309,102 @@ __Objective__: Use Tailwind and Flexbox to create a horizontal navigation bar th
 	- class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg"
 - Open your 3-nav_index.html in the browser. It should look like this:
 	- ![Screenshot](./0x02-tailwind-css/images/Screenshot%20from%202025-07-02%2014-19-52.png)
+
+
+### Task 4: Creating a responsive flexbox layout with tailwind.
+__Objective__: The goal of this task is to build a responsive page layout with tailwind’s utility classes, while using tailwind CDN
+
+- Create a new file 4-flexbox_index.html. Inside it add the following code:
+	- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Layout</title>
+    <style>
+      @media (max-width: 768px) {
+          main {
+              flex-direction: column;
+          }
+      }
+  </style>
+</head>
+<body class="p-4">
+    <header class="mb-4">
+        <h1 class="text-3xl text-red-700 font-bold">Responsive Flexbox Layout</h1>
+    </header>
+
+    <main>
+        <aside>Sidebar</aside>
+        <section>Content Section</section>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>  
+</body>
+</html>
+
+- Add flex class to the main tag
+- Inside the aside tag, partition the width such that it occupies one third of the available width space. Give it a gray background color with a padding of 4 i.e:
+	- class="w-1/3 bg-gray-300 p-4"
+- The section tag should occupy the remaining ⅔ in width space, padding 4 and a gray background color with a gradient of 500
+- Open your html file in the browser. Your output should be as follows:
+	- ![Screenshot](./0x02-tailwind-css/images/Screenshot%20from%202025-07-02%2014-20-00.png)
+
+### Task 5:Combine CSS Grid ad Flexbox for a Multi-Section Layout
+__Objective__: combine both grid and flexbox to create a responsive layout
+
+- Create a file 5-gridflex_index.html and inside it add the following code:
+	- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main>
+        <section>
+            <div>Flexbox Item 1</div>
+            <div>Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+</body>
+</html>
+- In the main tag create a grid layout with a default 1 column on smaller screens and 3 columns on larger screens. It should a spacing of 4 and a margin top of 4. This can be achieved as:
+	- class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen"
+- In the section tag, specify that the large screen column should span 2 columns. Equally apply a flex layout to the element
+	- class="lg:col-span-2 flex"
+- Each div in the section tag, should have a padding of 4, red background color with a gradient of 200 and 400 respectively and should each occupy a width of ½.
+- Open your file on the browser. Your output should be as follows:
+	![Screenshot](./0x02-tailwind-css/images/Screenshot%20from%202025-07-02%2014-20-35.png)
+
+
+### Task 6: Build a Responsive Image Gallery Using CSS Grid
+__Objective__: Expand on the previous layout by adding a responsive image gallery using CSS grid
+Use the existing layout from the previous task in a file 6-imageGallery.html
+
+Create an additional section for an image gallery below the existing content.
+
+Use CSS Grid to arrange the images in a 3-column layout.
+
+On smaller screens, the gallery should adjust to display one image per row.
+
+Make sure the images are responsive, resizing properly on different screen sizes.
+
