@@ -1,0 +1,8 @@
+# Installing SASS_SCSS
+
+Steps:
+1. Install node version 20.16 with the command:
+"$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash"
+
+2. After installing node, install saa with the follwoing command:
+"npm install sass -v 3.7.4"
